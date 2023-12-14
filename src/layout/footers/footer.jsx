@@ -15,45 +15,16 @@ import { useIsomorphicLayoutEffect } from '@/src/hooks/useIsomorphicEffect';
 
 // footer_content 
 const footer_content  = {
-    title: <>Get Our Latest's News <br /> & Updates</>,
-    description: <>Our highly skilled development teams <br /> specialized in data analysis.</>,
-    phone: "+806(000)8899",
-    contact_mail: "contact@info.com",
-    location: "1234 North Avenue Luke Lane, South Bend,",
+    title: <></>,
+    description: <></>,
+    phone: "",
+    contact_mail: "",
+    location: "",
 
-    copy_right: <>Full Copyright & Design By <Link href="#">@Theme pure</Link> – {new Date().getFullYear()}</>,
+    copy_right: <>Copyright <Link href="https://metablox.com.br/?redirect=0">METABLOX - Metaverse School</Link> – {new Date().getFullYear()}</>,
 
     footer_lisks : [
-        {
-            id: 1,
-            cls_1: "col-xl-3 col-lg-3 col-md-5",
-            cls_2: "footer-col-2",
-            title: "What We Do",
-            delay: ".7s",
-            links: [
-                {name: "Business", link: "#"},
-                {name: "Technology", link: "#"},
-                {name: "Online Marketing", link: "#"},
-                {name: "Advertising Strategy", link: "#"},
-                {name: "Strategy", link: "#"},
-                {name: "Development", link: "#"},
-            ]
-        },
-        {
-            id: 2,
-            cls_1: "col-xl-2 col-lg-2 col-md-6",
-            cls_2: "footer-col-3",
-            title: "Other Pages",
-            delay: ".9s",
-            links: [
-                {name: "About", link: "/about"},
-                {name: "Services", link: "/service"},
-                {name: "How It Works", link: "#"},
-                {name: "Pricing Plan", link: "/price"},
-                {name: "Blog", link: "/blog"},
-                {name: "Contact", link: "/contact"},
-            ]
-        },
+
 
     ],
 
@@ -194,23 +165,6 @@ const Footer = () => {
                               <div className="tp-copyright__lang">
                                  <ul>
                                     <li>
-                                       <button id="tp-copyright__lang-toggle" onClick={() => oppenLan()} >
-                                          <span>English (US)<i className="fal fa-angle-down"></i></span>
-                                       </button>
-
-                                       {isOppen && 
-                                       <ul className={`tp-copyright__lang-submenu ${isOppen && "open"}`}>
-                                          <li>
-                                             <Link href="#">Arabic</Link>
-                                          </li>
-                                          <li>
-                                             <Link href="#">Spanish</Link>
-                                          </li>
-                                          <li>
-                                             <Link href="#">Mandarin</Link>  
-                                          </li>
-                                       </ul>
-                                       }
                                     </li>
                                  </ul>
                               </div>
